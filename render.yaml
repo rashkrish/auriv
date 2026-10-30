@@ -1,0 +1,17 @@
+# Render blueprint: a free web service that runs Auriv.
+# On Render: New > Blueprint > choose this repository. Then add the two secret keys when asked.
+services:
+  - type: web
+    name: auriv
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn server:web --bind 0.0.0.0:$PORT --workers 1 --threads 8 --timeout 120
+    healthCheckPath: /api/languages
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: NEBIUS_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false

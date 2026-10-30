@@ -1,0 +1,151 @@
+# Help numbers, by country.
+#
+# Rules:
+# - Only entries with status: verified are shown to users.
+# - Check each number against an official government or service source before you set status to verified.
+# - Record the date you checked, and the source link.
+# - kind must be one of: emergency, police, ambulance, fire, fire_ambulance, medical, crisis, women
+#   (the interface translates these labels; do not put translated text here).
+# - scam_report (optional): where to report a scam, shown under every message check.
+# - languages: the languages offered first for this country (codes from the app's language list).
+# - Add a country by copying a block and filling it in.
+
+countries:
+
+  GB:
+    name: United Kingdom
+    languages: [en-GB]
+    status: verified
+    checked: "2026-10-29"
+    source: "https://www.nwas.nhs.uk/news/999-or-111-which-should-you-use/ (NHS North West Ambulance Service)"
+    numbers:
+      - kind: emergency
+        number: "999"
+      - kind: medical
+        number: "111"
+    # scam_report checked 2026-10-29: https://www.nicybersecuritycentre.gov.uk/node/395 (7726 free) and https://www.actionfraud.police.uk/report_phishing
+    scam_report: "7726 (texts, free) · report@phishing.gov.uk (emails)"
+
+  US:
+    name: United States
+    languages: [en-US, es-ES]
+    status: verified
+    checked: "2026-10-29"
+    source: "https://www.911.gov/calling-911/frequently-asked-questions/ and https://988lifeline.org/get-help/"
+    numbers:
+      - kind: emergency
+        number: "911"
+      - kind: crisis
+        number: "988"
+    # scam_report: the Federal Trade Commission's official reporting site
+    scam_report: "reportfraud.ftc.gov"
+
+  IN:
+    name: India
+    languages: [hi-IN, en-IN, bn-IN, ta-IN]
+    status: verified
+    checked: "2026-10-28"
+    source: "https://www.incredibleindia.gov.in/en/emergency (Government of India portal)"
+    numbers:
+      - kind: emergency
+        number: "112"
+      - kind: police
+        number: "100"
+      - kind: ambulance
+        number: "102"
+      - kind: medical
+        number: "104"
+      - kind: women
+        number: "1091"
+    # scam_report checked 2026-10-29: https://ps.keralapolice.gov.in/ernakulamruralcyber-ps/notifications/National-Cyber-Crime-Reporting-Helpline-No-1930-3338
+    scam_report: "1930 · cybercrime.gov.in"
+
+  FR:
+    name: France
+    languages: [fr-FR]
+    status: verified
+    checked: "2026-10-29"
+    source: "https://formation-civique.interieur.gouv.fr (Ministère de l'Intérieur, annexe : les numéros d'urgence)"
+    numbers:
+      - kind: emergency
+        number: "112"
+      - kind: ambulance
+        number: "15"
+      - kind: police
+        number: "17"
+      - kind: fire
+        number: "18"
+      - kind: crisis
+        number: "3114"
+
+  DE:
+    name: Germany
+    languages: [de-DE, tr-TR]
+    status: verified
+    checked: "2026-10-29"
+    source: "https://aachen.polizei.nrw/en/article/emergency-call-110 (Polizei Nordrhein-Westfalen)"
+    numbers:
+      - kind: police
+        number: "110"
+      - kind: fire_ambulance
+        number: "112"
+
+  ES:
+    name: Spain
+    languages: [es-ES]
+    status: verified
+    checked: "2026-10-29"
+    source: "https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency/index_en.htm (European Union: 112 works free in all EU countries)"
+    numbers:
+      - kind: emergency
+        number: "112"
+
+  IT:
+    name: Italy
+    languages: [it-IT]
+    status: verified
+    checked: "2026-10-29"
+    source: "https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency/index_en.htm (European Union: 112 works free in all EU countries)"
+    numbers:
+      - kind: emergency
+        number: "112"
+
+  BR:
+    name: Brazil
+    languages: [pt-BR]
+    status: verified
+    checked: "2026-10-29"
+    source: "https://www.seguranca.pr.gov.br/Telefones-Uteis (Governo do Paraná, Secretaria da Segurança Pública)"
+    numbers:
+      - kind: police
+        number: "190"
+      - kind: ambulance
+        number: "192"
+      - kind: fire
+        number: "193"
+      - kind: women
+        number: "180"
+
+  JP:
+    name: Japan
+    languages: [ja-JP]
+    status: verified
+    checked: "2026-10-29"
+    source: "https://www.mofa.go.jp/j_info/visit/visa/pdfs/leaflet_living_en.pdf (Ministry of Foreign Affairs of Japan)"
+    numbers:
+      - kind: police
+        number: "110"
+      - kind: fire_ambulance
+        number: "119"
+
+  ID:
+    name: Indonesia
+    languages: [id-ID]
+    status: verified
+    checked: "2026-10-29"
+    source: "https://tribratanews.polri.go.id (Polri: 110 free nationwide) and https://kemkes.go.id (Kementerian Kesehatan: 119 medical emergencies)"
+    numbers:
+      - kind: police
+        number: "110"
+      - kind: ambulance
+        number: "119"

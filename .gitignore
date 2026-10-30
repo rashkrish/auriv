@@ -1,0 +1,28 @@
+# Secrets: never commit API keys
+.env
+*.env
+check_api.py
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Local data and logs (personal goals, call logs)
+data/
+logs/
+*.db
+
+# Test outputs
+tests/results.csv
+tests/results.md
+tests/calibration.csv
+tests/calibration.md
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

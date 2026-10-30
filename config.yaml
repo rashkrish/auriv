@@ -1,0 +1,38 @@
+model: "nvidia/Nemotron-3_5-Lightning"   # paste the exact ID from client.models.list()
+
+# Extra NVIDIA models on Nebius Token Factory, each used where it fits best.
+# If one of these fails, Auriv falls back to the main model above, so a wrong ID never breaks a reply.
+models:
+  fast: "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B"     # quick background jobs: drafting a goal from the chat
+  deep: "nvidia/Nemotron-3-Ultra-550b-a55b"         # careful reasoning: concepts, "teach me", research
+max_tokens: 3000
+temperature: 0.3
+max_attempts: 2      # one retry is enough; each retry adds a full model call
+
+# Thinking (hidden reasoning before the answer). Off is much faster; on can help hard questions but is slower.
+# Sent as chat_template_kwargs.enable_thinking, the field NVIDIA documents for Nemotron 3 models.
+thinking:
+  main: false     # everyday replies (Lightning)
+  fast: false     # background jobs (Nano)
+  deep: false     # concepts and research (Ultra); try true if answers need more depth and speed is fine
+
+search:
+  max_results: 4
+  snippet_chars: 1200
+  signals:
+    - "search the web"
+    - "look this up"
+    - "find sources"
+    - "latest"
+    - "current"
+    - "today"
+    - "recent"
+    - "right now"
+    - "time is it in"
+    - "official website"
+
+# Structural markers of leaked reasoning. Narrow on purpose.
+leak_patterns:
+  - "<think"
+  - "thinking process"
+  - "check against constraints"

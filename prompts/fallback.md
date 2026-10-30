@@ -1,0 +1,1 @@
+I couldn't finish a complete answer this time, so I won't guess. Try asking again in a shorter way. If it's urgent or important, check with the official website or a trusted person, or use Talk to a person.
