@@ -9,7 +9,7 @@ Built for the **Nebius x NVIDIA Global AI Hackathon** (Personal AI track).
 
 ## Try it
 
-- **Live demo:** `https://<your-app>.onrender.com` *(replace with your Render link)*
+- **Live demo:** https://auriv.onrender.com
 - Works best in **Chrome or Edge** (voice typing). Safari and Samsung Internet also work. In other browsers you can type, and Auriv still reads answers aloud.
 - First screen: pick your country and language. Then tap the microphone, or tap one of the four cards.
 
