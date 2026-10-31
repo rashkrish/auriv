@@ -27,30 +27,34 @@ Built for the **Nebius x NVIDIA Global AI Hackathon** (Personal AI track).
 
 ## What makes Auriv different
 
-**Safety is built into the code, not just requested from the model**
-- Emergencies get a fixed reply with **verified emergency numbers for your country** (UK 999, India 112, US 911 and more), before any AI is called.
-- Message checks always start with **SCAM / SUSPICIOUS / LOOKS OK**, never send the pasted message to web search, and end with your country's **official reporting route** (UK 7726, India 1930 · cybercrime.gov.in, US reportfraud.ftc.gov).
-- Official questions (passports, tax, benefits, law, health) use **official government sources for your country**; social media and video sites are blocked as sources.
-- Phone numbers that are not in the sources are removed, so the model cannot invent a helpline.
-- Checked recent changes override the model's memory (for example, England abolished Section 21 evictions on 1 May 2026).
-- Auriv never pays, sends, books or logs in for you. It shows you how, step by step.
+**Easy for everyone, by voice or text**
+
+- **Talk or type:** speak at your own pace, correct any word by typing, and send when ready.
+- **Your language, your country:** 20 languages, with advice that fits where you live. In Hindi, familiar English terms appear in brackets.
+- **Understands everyday wording:** whether you say "my goal is…", "I have to prepare for…" or the same in Hindi, French or Japanese, Auriv recognises what kind of help you need.
+- **Comfortable listening:** answers are read aloud for each language, at the speed you choose.
+
+**Safety comes first, and it is enforced in code**
+
+- **Emergencies:** an instant reply with verified emergency numbers for your country (UK 999, India 112, US 911 and more), shown before any AI model is involved.
+- **Scam checks:** a clear verdict first (**SCAM**, **SUSPICIOUS** or **LOOKS OK**), the warning signs, and your country's official reporting route (UK 7726, India 1930). The message you paste is never sent to web search.
+- **Trustworthy sources:** questions about passports, tax, benefits, law or health are answered from official government sources for your country, never from social media.
+- **No invented helplines:** any phone number not found in a trusted source is removed before you see it.
+- **Up to date where it matters:** checked recent changes, such as new housing law, take priority over what the model learned in training.
+- **You stay in control:** Auriv never pays, books, sends or logs in for you. It shows you how, step by step.
 
 **Plans with real dates, and it remembers**
-- Dates like "next Monday", "5 days after that", "in 3 months" or "13 नवंबर" are **worked out in code**, not by the model.
-- Schedules come back as a dated table with clashes pointed out.
-- Goals are **drafted and saved automatically** from the conversation (title, due date, checklist), with Undo. Step dates are spread evenly up to the deadline.
-- **Saved lessons, schedules and goals**: tap a card to continue any of them later, with the whole conversation restored.
-- A reminder appears only when a deadline is today or tomorrow.
 
-**Made for people who don't type well**
-- Voice-first: speak at your own pace, fix any word by typing, then send.
-- 20 languages, with the person's country shaping the advice. In Hindi, key English terms appear in brackets, and Auriv uses the feminine grammar that matches its voice.
-- Requests are recognised in any language: phrase rules first, then a one-word classification by the fast Nemotron model.
-- Adjustable speaking speed, and answers read aloud in the right voice for each language.
+- **Accurate dates:** "next Monday", "five days after that" or "13 नवंबर" are turned into exact calendar dates, so plans are never off by a day.
+- **Clear schedules:** meetings and classes become a dated table, with clashes pointed out.
+- **Goals that save themselves:** mention a goal and Auriv creates it, with a due date and a checklist spread across the time you have. One tap undoes it.
+- **Pick up where you left off:** lessons, schedules and goals are saved, and continuing one restores the whole conversation.
+- **Reminders only when needed:** a reminder appears only when a deadline is today or tomorrow.
 
-**Teaches you to speak, not just read**
-- Language lessons wrap each practice phrase so it is read in the right voice, with a 🎤 button that listens to you and checks each word.
-- Hands-on skills (badminton, yoga, cooking) get the basics in words plus links to good videos, because Auriv cannot watch you.
+**Learning you can practise, not just read**
+
+- **Speaking practice:** each phrase in a language lesson is spoken in a native voice, and a microphone button listens to you and checks every word.
+- **Real-world skills:** for sports, yoga or cooking, Auriv explains the basics, gives a simple practice plan, and links to good video guides, because it cannot watch you.
 
 ---
 
